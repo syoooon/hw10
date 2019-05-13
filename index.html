@@ -10,7 +10,7 @@
 		.a1 img{height: 600px; background-size: cover; margin-left: 300px; margin-top: 60px;}
 		.a2 img{height: 100px; background-size: cover; margin-left: 270px;}
 		.a3 img{height: 360px; background-size: cover;}
-		.a3 img:hover {
+		.a3 img {
   			animation: shake 0.5s;
   			animation-iteration-count: infinite;} 
 
@@ -116,15 +116,15 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0);
 }
-.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+.hvr-wobble-vertical{
   -webkit-animation-name: hvr-wobble-vertical;
   animation-name: hvr-wobble-vertical;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 /* Skew Backward */
@@ -166,7 +166,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+.hvr-pulse-grow{
   -webkit-animation-name: hvr-pulse-grow;
   animation-name: hvr-pulse-grow;
   -webkit-animation-duration: 0.3s;
