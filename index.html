@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>American Life in 70s</title>
+		<style>
+		.wrap{width: 800px; margin: auto;
+				background: url(colla_.png); height: 4000px; background-size: cover; overflow: hidden; }
+		.a1{perspective: 800px;
+			}
+		.a1 img{height: 600px; background-size: cover; margin-left: 300px; margin-top: 60px;}
+		.a2 img{height: 100px; background-size: cover; margin-left: 270px;}
+		.a3 img{height: 360px; background-size: cover;}
+		.a3 img:hover {
+  			animation: shake 0.5s;
+  			animation-iteration-count: infinite;} 
+
+		.b1 img{height: 500px; background-size: cover; margin-left: 230px;}
+		.b2{perspective: 800px;}
+		.b2 img{height: 320px; background-size: cover; margin-left: 470px; margin-top: 30px; }
+		
+		.b3{width: 800px; float: left;}
+		.b3 img{height: 350px; background-size: cover; margin-left: 50px; }
+
+		.c1 img{height: 620px; background-size: cover;  margin-top: 520px; margin-left: 50px;}
+		.c2 img{height: 228px; background-size: cover; margin-left: 320px; margin-top: 8px;}
+
+
+
+		@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+		.rotate{width: 600px; z-index:1; 
+											
+			animation: ro 2s infinite alternate linear;
+			display: block;}
+
+		.brush{width: 500px; z-index:1; 
+											/* 이름 시간 횟수 속도 */
+			animation: ro 1.5s infinite alternate linear;
+			display: block;}
+
+		@keyframes ro{
+			from{left:1px;}
+			to{transform: rotate3D(0,0,1,7deg);}}
+		}
+
+		/**/
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(2px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Skew Backward */
+.hvr-skew-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hvr-skew-backward:hover, .hvr-skew-backward:focus, .hvr-skew-backward:active {
+  -webkit-transform: skew(10deg);
+  transform: skew(10deg);
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+
+		</style>
+</head>
+<body>
+	<div class="wrap">
+		<section class="a1">
+			<img src="man1.png" class="rotate">
+		</section>
+		<section class="a2">
+			<img src="mel.png">
+		</section>
+		<section class="a3">
+			<img src="girl1.png"> 
+		</section>
+
+		<section class="b1">
+			<img src="bubble.png" class="hvr-pulse-grow">
+		</section>
+		<section class="b2">
+			<img src="finger1.png" class="brush">
+		</section>
+			<section class="b3">
+			<img src="finger2.png" >
+			<img src="girl4.png" style="height: 450px; background-size: cover; margin-left: 200px;"
+			class="hvr-wobble-vertical" >
+			</section>
+
+		<section class="c1">
+			<img src="girl6.png" class="hvr-skew-backward">
+		</section>
+		<section class="c2">
+			<img src="tv.gif">
+		</section>
+
+	</div>
+</body>
+</html>
